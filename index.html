@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script src="./Object.js"></script>
+    <script src="./artists.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body style="background-color: beige;margin-left: 150px;margin-top: 50px;">
+
+    <h2 class="text-info">Music Album</h2>
+    <button onclick="addAlbums()" class="bg-success text-white">Add Albums</button>
+    <h4>Available Albums are:</h4>
+    <select id="albums" onchange="selectedOptionFn(this.value)">
+        <option value="">--select--</option>
+    </select>
+    <h4>Selected Movie:
+        <i id="movieName"></i>
+    </h4>
+    <ul id="songs">
+
+    </ul>
+    <!-- <p id="songDetails"></p> -->
+    <audio controls class="audioClass" id='songPlay'>
+        <source type="audio/mpeg">
+    </audio>
+
+    <h4>Available Artists are:</h4>
+    <select id="artists" onchange="selectedArtistFn(this.value)">
+        <option value="">--select--</option>
+    </select>
+    <h4>Selected Artist: 
+        <i id="artistName"></i>
+    </h4>
+    <ul id="artId">
+
+
+    </ul>
+    <audio controls class="audioClass" id='songPlay1'>
+        <source type="audio/mpeg">
+    </audio>
+
+</body>
+
+</html>
